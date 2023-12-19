@@ -41,9 +41,18 @@ However, as the plot deepens, a nuanced reality surfaces. Toward the bottom of t
 In essence, the narrative paints a vivid portrait of the cinematic landscape, where financial success and artistic expression weave together in a compelling and eternal dance.
 </p>
 
+<p>
+The original distribution of the inflated movie box office revenue exhibits a heavy-tailed pattern, with a few movies achieving extremely high revenues. By applying a logarithmic transformation on the x-axis, we "approximate" a normal distribution, making the data more amenable to statistical analyses that assume normality.
+<iframe src="images/box_office_distribution.html" width="100%" height="500px" style="border: none;"></iframe>
 
+Zokomo discovered movie box office revenue data. Inititaly, he noticed that the original distribution of the inflated movie box office revenue exhibits a heavy-tailed pattern, with a few movies achieving extremely high revenues. With a strategic logarithmic transformation on the x-axis, Zokomo reformulated the data, making it resemble a more normalized curve. The aim was to prepare the data for statistical analyses that assumed normality.
+
+</p>
 <p>
 Next, we go into the movie summaries to discover a fascinating pattern. Positive words, those feel-good expressions, and their counterparts, the negative ones, each make up 0 to 10 percent of all words in these movie summaries. The rest of the words fall into the neutral territory, lacking any emotional charge.
+
+
+
 </p>
 
 
