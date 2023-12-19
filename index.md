@@ -43,7 +43,7 @@ In essence, the narrative paints a vivid portrait of the cinematic landscape, wh
 
 <p>
 The original distribution of the inflated movie box office revenue exhibits a heavy-tailed pattern, with a few movies achieving extremely high revenues. By applying a logarithmic transformation on the x-axis, we "approximate" a normal distribution, making the data more amenable to statistical analyses that assume normality.
-<iframe src="images/box_office_distribution.html" width="100%" height="500px" style="border: none;"></iframe>
+<iframe src="assets/plots/box_office_distribution.html" width="100%" height="500px" style="border: none;"></iframe>
 
 Zokomo discovered movie box office revenue data. Inititaly, he noticed that the original distribution of the inflated movie box office revenue exhibits a heavy-tailed pattern, with a few movies achieving extremely high revenues. With a strategic logarithmic transformation on the x-axis, Zokomo reformulated the data, making it resemble a more normalized curve. The aim was to prepare the data for statistical analyses that assumed normality.
 
@@ -56,27 +56,12 @@ Next, we go into the movie summaries to discover a fascinating pattern. Positive
 </p>
 
 
-<!-- Button to toggle plots -->
-
-<div id="pos_neg_container"></div>
-
-<button id="pos_neg_Button" onclick="pos_neg_switch()">Show Positive Plot</button>
-
-<script src="{% link assets/js/pos_neg_btn.js %}"></script>  
-
-
-  
-    
-
-<iframe src='assets/plots/neg_revenue_px.html' width="100%" height="500px" style="border: none;"></iframe>
-<iframe src='assets/plots/pos_revenue_px.html' width="100%" height="500px" style="border: none;"></iframe>
-<!-- <iframe src="assets/plots/pos_revenue_px.html" width="100%" height="500px" style="border: none;"></iframe> -->
+<iframe src='assets/plots/pos_neg_revenue.html' width="100%" height="500px" style="border: none;"></iframe>
 
 <p>
 As Zok Omo Predicto looked at positive words in movies, we noticed something interesting. The money these movies made matched up with how many positive words were in their summaries. The best part? Movies with 0% to 2% happy words made the most money on average, while those with 8% to 10% made the least. So, it seems like movies make more money when their summaries aren't too cheerful.
 </p>
 
-<!-- <iframe src="assets/plots/neg_revenue_px.html" width="100%" height="500px" style="border: none;"></iframe> -->
 
 <p>
 Switching gears to the negative side of the spectrum, we also categorized them into five intervals, ranging from 0-2% to 8-10%. The golden zone emerged between 2% and 4%, with the first interval doing really well and the second grabbing the top spot. Interestingly, the higher the percentage of negative words, the lower the average revenue.  
@@ -89,15 +74,8 @@ Summing it all up, a general trend emerged. Movies that balanced the good and no
 We then observe the mystical relationship between movie duration and average revenue. It reveals that the golden sweet spot for film duration lay between 3 and 4 hours—the fourth interval in our next plot.
 </p>
 
-<!-- Container for the plots 
-<div id="runtime_container"></div>
-<button id="runtime_Button" onclick="runtime_switch()">Show BOX Plot</button>
 
-
-<script src="{% link assets/js/runtime_btn.js %}"></script> -->
-
-<iframe src="assets/plots/runtime_mean_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
-<iframe src="assets/plots/runtime_box_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
+<iframe src="assets/plots/runtime_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
 
         
 <p>
