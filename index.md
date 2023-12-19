@@ -47,13 +47,13 @@ Next, we go into the movie summaries to discover a fascinating pattern. Positive
 </p>
 
 
-<!-- Button to toggle plots 
-<button id="pos_neg_Button" onclick="pos_neg_switch()">Show Positive Plot</button>
+<!-- Button to toggle plots -->
 
 <div id="pos_neg_container"></div>
 
+<button id="pos_neg_Button" onclick="pos_neg_switch()">Show Positive Plot</button>
 
-<script src="{% link assets/js/pos_neg_btn.js %}"></script>  -->
+<script src="{% link assets/js/pos_neg_btn.js %}"></script>  
 
 
   
