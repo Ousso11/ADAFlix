@@ -1,0 +1,13 @@
+button {
+    display: block;
+    margin: auto;
+  }
+  
+  /* Change the button color */
+  button {
+    background-color: #c31927; /* Change this color code as needed */
+    color: #fff; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }

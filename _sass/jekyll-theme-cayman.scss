@@ -31,7 +31,9 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: $body-text-color;
+  background: linear-gradient(to bottom, #060D1D 5% , #252941 100% );
+  animation: gradientAnimation 10s infinite alternate;
+  color: #ffffff; /* Red text color */
 }
 
 #skip-to-content {
@@ -105,11 +107,16 @@ a {
   }
 }
 
+@import "variables";
+
+
 .page-header {
   color: $header-heading-color;
   text-align: center;
   background-color: $header-bg-color;
-  background-image: linear-gradient(120deg, $header-bg-color-secondary, $header-bg-color);
+  background-image: url("../images/image2.jpg");
+  background-size: cover;
+  background-position: center;
 
   @include large {
     padding: 5rem 6rem;
@@ -123,13 +130,15 @@ a {
     padding: 2rem 1rem;
   }
 }
-
 .project-name {
   margin-top: 0;
   margin-bottom: 0.1rem;
+  color: #d73a17; // Add this line to set the color to red
 
   @include large {
     font-size: 3.25rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.2; 
   }
 
   @include medium {
