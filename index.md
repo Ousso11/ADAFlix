@@ -105,35 +105,36 @@ In the grand finale of their quest, we conclude that films of a duration between
 
 </p>
 
-# year
-<p>
 
+<p>
+Our bear is stunned by the results he got. He observes that the best month to launch a movie is June, with a significant difference (no overlapping CIs), followed by December and July. He assumes that this aligns with the months when students typically have vacations, which might explain the results.
+</p>
+<iframe src="assets/plots/months_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
+
+
+<p>
+Zokomo indicates that from now on, as in many following feature analysis, he will be averaging log_revenues instead of averaging revenues. He says " this corresponds to computing the geometric mean instead of an arithmetic mean with the objective of gaining statistical stability. The geometric mean tends to be less sensitive to extreme values (outliers) compared to the arithmetic mean. This makes it a more robust measure in situations where there are significant variations in the data, since it represents better the central tendency. In my case, it is useful to penalize the big variances in revenues thus focusing on the consistency of the contribution of the analysed feature. "
 </p>
 
-# month
-<p>
+<iframe src="assets/plots/actors_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
 
+<p>
+Zokomo also says: " With geometric mean for actors, I am favoring those with consistent success over the ones who only participated in a few hits. A clear demonstration is that selecting the top actors with arithmetic mean results in many actors from harry potter or other sagas. This is because there are many film in these sagas with high revenues, which is boosting the actors mean revenues despite them not having much successful movies. "
 </p>
 
-# character
-<p>
 
+
+<p>
+Zokomo is now interested in the proportion of men and women actors in movies. He decides to analyze whether there is a particular proportion that generates higher box office revenues. To this extend, he is studying the percentage of actresses in movies and how they relate to the box office revenues.
 </p>
 
-# actor gender
 <p>
-
+For that, our scientist is trying to perform an equal frequency discretization of the percentage of women, dividing percentages into 8 groups where there is an equal number of movies in each group. He thinks aht by doing it this way, then instead of feeding the final formula with an actual percentage of women, he will only use categorical variables.
 </p>
 
-# actor
+<iframe src="assets/plots/women_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
 <p>
-
-</p>
-
-# women %
-
-<p>
-
+From the plot, Zokomo notices that movies with women percentages between 15% and 21% result in significantly higher box office revenues, followed by movies that have women percentages between 34% and 38%. While movies with 45% to 100% have significantly lower mean box office revenues, and their confidence intervals don't intersect with other intervals.
 </p>
 
 # conclusion 
