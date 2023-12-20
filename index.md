@@ -157,10 +157,10 @@ For that, our scientist is trying to perform an equal frequency discretization o
 Pointing to the plot, Zokomo says: " We notice that movies with women percentages between 15% and 21% result in significantly higher box office revenues, followed by movies that have women percentages between 34% and 38%. While movies with 45% to 100% have significantly lower mean box office revenues, and their confidence intervals don't intersect with other intervals."
 </p>
 
-<h2 class="red-heading">Conclusion </h2>
 "Our findings here are not merely data points. They weave stories that reveal the intricate dance between cinema and its audience. The art of Film making is a complex interplay of timing, storytelling, and the representation of characters that beckons audiences into theaters. These insights pave our path to uncovering what might be the alchemical formula for box office gold." Content with the progress, Zokomo turns to ZokAdada, his wife who shares his passion for cinematic analytics.
 
-<img src="images/zokada1.jpeg" alt="Film Production" style="width:100%; max-width:1000px; display:block; margin:auto;">
+
+<img src="images/zokada1.jpeg" alt="Film Production" style="width:50%; max-width:1000px; display:block; margin:auto;">
 
 ZOKada, eager and bright-eyed, has been closely following Zokomo's work. With his findings in hand, she is now ready to embark on her own quest. Alongside her husband, a fellow data enthusiast, they are poised to construct a machine learning model. Their goal is to determine a magic formula that could predict a film's revenue based on the rich tapestry of features Zokomo has meticulously analyzed. 
 
@@ -173,7 +173,7 @@ ZOKada, eager and bright-eyed, has been closely following Zokomo's work. With hi
 <h2 class="red-heading">Conclusion </h2>
 
 <h2 class="red-heading">Outlier above </h2>
-<img src="images/zokada2.png" alt="Film Production" style="width:100%; max-width:1000px; display:block; margin:auto;">
+<img src="images/zokada2.png" alt="Film Production" style="width:50%; max-width:1000px; display:block; margin:auto;">
 
 <h2 class="red-heading">Outlier below </h2>
 
