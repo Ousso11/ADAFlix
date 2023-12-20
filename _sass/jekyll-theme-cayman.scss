@@ -222,6 +222,14 @@ a {
     color: $section-headings-color;
   }
 
+  .red-heading {
+    color: red; /* This sets the color of the heading to red */
+    font-size: 24px; /* This sets the size of the heading */
+    font-weight: bold; /* This makes the heading bold */
+    margin: 20px 0; /* This adds space above and below the heading */
+    text-align: center; /* This centers the heading */
+  }
+
   p {
     margin-bottom: 1em;
   }

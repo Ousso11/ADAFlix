@@ -22,7 +22,7 @@ title: Movies That Could Have Met a Different Success
 </p>
 
 
-# Let us tell you a little story about data
+<h2 class="red-heading">Let us tell you a little story about data</h2>
 
 <p>
 The CMU Movie Summary Corpus Dataset consists of 42,306 plot summaries and its meta data from movies, released in 1893 until 2013. 
@@ -93,18 +93,52 @@ In the grand finale of their quest, we conclude that films of a duration between
 </p>
 <img src="images/ZokOmo.png" alt="Film Production" style="width:100%; max-width:1000; display:block; margin:auto;">
 
-
-# Language
 <p>
+Zokomo generates a bar chart that illustrates the average movie revenues adjusted for inflation across the most frequently used languages in his dataset. The chart reveals that languages such as Arabic and Russian tend to have higher average revenues. Surprisingly, the categories of English and Korean, on the other hand, exhibit lower average revenues, which is somewhat unexpected.
 
+To validate his findings, Zokomo plans to create a plot that displays the languages alongside the logarithmic movie revenues for movies produced in those languages. This additional analysis will provide a more comprehensive picture of revenue patterns across different languages in his dataset.
 </p>
 
-# countries
+<p>
+<iframe src="languages_bar_plot.html" width="100%" height="500px" style="border: none;"></iframe>
+</p>
+
+<p>
+Zokomo started by plotting a bar chart that shows the mean log revenue for each selected language with 95% confidence intervals. He finds that Italian has the highest average log revenue among the selected languages, but also a wide confidence interval, which indicates higher variability in revenue. In contrast, he realises that Korean has the lowest average log revenue among the selected languages and a narrow confidence interval, which indicates a consistent but lower revenue performance, which highlights more the weak relationship he found when dealing with South Korea as a country and high movies revenues. 
+</p>
+
+<p>
+<iframe src="languages_bar.html" width="100%" height="500px" style="border: none;"></iframe>
+</p>
 
 <p>
 
+He also creates a box plot demonstrating the distribution of logarithmic movie revenues for selected languages. He notices that English and Korean languages show a greater range and many outliers. In particular, English displays a wide range, which is expected given the large number of English language films, including both high-revenue and lower-revenue films. However, languages such as Standard Mandarin and Cantonese show zero outliers, which implies a more consistent revenue performance across films in those languages.
 </p>
 
+<p>
+<iframe src="languages_box.html" width="100%" height="500px" style="border: none;"></iframe>
+</p>
+
+<p>
+While dealing with the countries feature, Zokomo notices that the mean revenue per country, depicted in the bar chart he created, shows substantial variations across different countries. The United States of America, United Kingdom, Australia and Germany demonstrate particularly high mean revenues, indicating a strong performance for films from these countries. Conversely, countries like Italy, Canada, France, Japan and Spain show relatively lower mean revenues, though they still contribute significantly to the global film industry. In contrast, South Korea's mean revenue is on the lowest side.
+</p>
+
+<p>
+<iframe src="countries_bar_plot.html" width="100%" height="500px" style="border: none;"></iframe>
+</p>
+
+<p>
+Zokomo employs a box plot to illustrate the distribution of logarithmic movie revenues in countries that feature at least 50 movies in their dataset. The median log revenue remains relatively consistent across countries, with a few exceptions displaying higher or lower median revenues. Notably, countries such as the United States of America exhibit a broader range of log revenues, indicating substantial variability in their movie earnings.
+
+While many countries display numerous outliers on the lower end of the revenue spectrum, only the United States of America stands out with outliers on the higher end. This observation suggests that the USA has movies with revenues significantly exceeding the typical range, potentially attributable to the fact that a substantial proportion of movies are produced there.
+
+Zokomo's assessment suggests that choosing to produce a movie in the USA is an attractive option for producers who are willing to take some risks. Despite the inherent risk of falling below the average American movie revenue, the presence of numerous low outliers indicates the potential for below-average earnings. However, the USA stands out as the only country with high outliers, implying the possibility of achieving a more predictable, substantial revenue and even experiencing remarkable financial success. While this decision carries its share of risk, it may ultimately prove to be worthwhile.
+</p>
+
+<p>
+<iframe src="countries_box_plot.html" width="100%" height="500px" style="border: none;"></iframe>
+</p>
 
 <p>
 Our bear is stunned by the results he got. He observes that the best month to launch a movie is June, with a significant difference (no overlapping CIs), followed by December and July. He assumes that this aligns with the months when students typically have vacations, which might explain the results.
@@ -137,33 +171,20 @@ For that, our scientist is trying to perform an equal frequency discretization o
 From the plot, Zokomo notices that movies with women percentages between 15% and 21% result in significantly higher box office revenues, followed by movies that have women percentages between 34% and 38%. While movies with 45% to 100% have significantly lower mean box office revenues, and their confidence intervals don't intersect with other intervals.
 </p>
 
-# conclusion 
-<p>
+<h2 class="red-heading">conclusion </h2>
 
-</p>
+<h2 class="red-heading">formula </h2>
 
-
-# formula 
 <p>
 <img src="images/ZokAda_formula.jpg" alt="Film Production" style="width:100%; max-width:1000px; display:block; margin:auto;">
 </p>
 
-# conclusion
-<p>
+<h2 class="red-heading">conclusion </h2>
 
-</p>
+<h2 class="red-heading">outlier above </h2>
 
-# outlier above
+<h2 class="red-heading">outlier below </h2>
 
-<p>
-
-</p>
-
-# outlier below
-<p>
-
-</p>
-
-# final conclusion
+<h2 class="red-heading">final conclusion </h2>
 
 
