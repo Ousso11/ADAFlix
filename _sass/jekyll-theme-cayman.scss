@@ -117,6 +117,11 @@ a {
   background-image: url("../images/image2.jpg");
   background-size: cover;
   background-position: center;
+  min-height: 120vh; /* Minimum height, but can be more based on content */
+  background-attachment: fixed; /* Optional: Keeps the background image fixed during scroll */
+  width: 100%; /* Ensure full width */
+  margin-left: auto; /* Center the header */
+  margin-right: auto; /* Center the header */
 
   @include large {
     padding: 5rem 6rem;
@@ -129,6 +134,18 @@ a {
   @include small {
     padding: 2rem 1rem;
   }
+  @media (max-width: 768px) {
+    .page-header {
+        min-height: 80vh; /* Smaller minimum height for smaller screens */
+        background-attachment: scroll; /* On smaller screens, the background scrolls with the content */
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header {
+        min-height: 60vh; /* Even smaller height for very small screens */
+    }
+}
 }
 .project-name {
   margin-top: 0;
