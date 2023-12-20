@@ -3,7 +3,7 @@ layout: default
 title: Movies That Could Have Met a Different Success
 ---
 
-<link rel="stylesheet" type="text/css" href="{% link assets/css/btn_styles.css %}">
+<!-- <link rel="stylesheet" type="text/css" href="{% link assets/css/btn_styles.css %}"> -->
 
 <p>
   Imagine possessing a revolutionary tool capable of predicting the success of your movie even before the cameras start rolling.
