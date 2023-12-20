@@ -100,7 +100,7 @@ To validate his findings, Zokomo plans to create a plot that displays the langua
 </p>
 
 <p>
-<iframe src="languages_bar_plot.html" width="100%" height="500px" style="border: none;"></iframe>
+<iframe src="assets/plots/languages_bar_plot.html" width="100%" height="500px" style="border: none;"></iframe>
 </p>
 
 <p>
@@ -108,7 +108,7 @@ Zokomo started by plotting a bar chart that shows the mean log revenue for each 
 </p>
 
 <p>
-<iframe src="languages_bar.html" width="100%" height="500px" style="border: none;"></iframe>
+<iframe src="assets/plots/language_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
 </p>
 
 <p>
@@ -116,16 +116,13 @@ Zokomo started by plotting a bar chart that shows the mean log revenue for each 
 He also creates a box plot demonstrating the distribution of logarithmic movie revenues for selected languages. He notices that English and Korean languages show a greater range and many outliers. In particular, English displays a wide range, which is expected given the large number of English language films, including both high-revenue and lower-revenue films. However, languages such as Standard Mandarin and Cantonese show zero outliers, which implies a more consistent revenue performance across films in those languages.
 </p>
 
-<p>
-<iframe src="languages_box.html" width="100%" height="500px" style="border: none;"></iframe>
-</p>
 
 <p>
 While dealing with the countries feature, Zokomo notices that the mean revenue per country, depicted in the bar chart he created, shows substantial variations across different countries. The United States of America, United Kingdom, Australia and Germany demonstrate particularly high mean revenues, indicating a strong performance for films from these countries. Conversely, countries like Italy, Canada, France, Japan and Spain show relatively lower mean revenues, though they still contribute significantly to the global film industry. In contrast, South Korea's mean revenue is on the lowest side.
 </p>
 
 <p>
-<iframe src="countries_bar_plot.html" width="100%" height="500px" style="border: none;"></iframe>
+<iframe src="assets/plots/countries_bar_plot.html" width="100%" height="500px" style="border: none;"></iframe>
 </p>
 
 <p>
@@ -137,7 +134,7 @@ Zokomo's assessment suggests that choosing to produce a movie in the USA is an a
 </p>
 
 <p>
-<iframe src="countries_box_plot.html" width="100%" height="500px" style="border: none;"></iframe>
+<iframe src="assets/plots/countries_box_plot.html" width="100%" height="500px" style="border: none;"></iframe>
 </p>
 
 <p>
