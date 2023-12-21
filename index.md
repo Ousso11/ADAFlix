@@ -201,7 +201,6 @@ Zokada's journey into the analytics of regression formula was beginning to bear 
 
 <h2 class="red-heading">" It's time to turn my attention to the outliers ! " </h2>
 
-<img src="images/zokada2.png" alt="Film Production" style="width:50%; max-width:1000px; display:block; margin:auto;">
 <p>
 "Now, I need to shift my focus to the outliers." Zokada thinks, " These are the films that don't fit the pattern, the ones that either wildly exceed or fall short of expectations. Understanding these anomalies could offer valuable lessons, shining light on the unpredictable elements of the film industry."
 </p>
@@ -216,6 +215,8 @@ Zokada then explores the results of her outlier analysis:
 "Using the two outlier groups I identified, I conducted a further investigation to find patterns specific to each. For each group, I compiled a list of features, but with an interesting twist: I only included features where less than 50% of their total distinct values were represented. This meant I was focusing on features that showed a concentrated pattern in either the 'below outliers' or the 'above outliers' group."
 </p>
 
+<img src="images/zokada2.png" alt="Film Production" style="width:50%; max-width:1000px; display:block; margin:auto;">
+
 <p>
 "Remarkably, both lists, one for each type of outlier, ended up sharing the same features. These were 'Movie Runtime', 'Actor Names', 'Countries', 'Languages', 'Movie Budget', and 'Production Company Name'. It was intriguing to see that, despite examining two different outlier groups, the same features emerged as significant in both cases. This discovery could point towards these factors playing a critical role in the differences between predicted and actual movie revenues."
 </p>
@@ -225,14 +226,66 @@ Zokada then explores the results of her outlier analysis:
 </p>
 
 <p>
+"Before I dive into the analysis, let me first break down the features that primarily contributed to the variance between the predicted and actual revenues," Zokada begins. "The first feature, 'runtime_Interval', classifies movies into five time categories: less than 1 hour, between 1 and 2 hours, between 2 and 3 hours, between 3 and 4 hours, and more than 4 hours.
+
+The next feature is 'actor ratio'. This measures the presence of top actors in a film by calculating the proportion of the top 100 actors, based on their movie revenues, within the total cast of a movie. Then, we have 'countries ratio', which represents the percentage of top countries in terms of mean movie revenue, relative to the total number of countries involved in each movie. Similarly, 'language ratio' calculates the percentage of top revenue-generating languages out of the total languages used in a film.
+
+The 'budget' and 'company' features are equally important, and I'll be discussing them in more detail as we proceed further with our analysis."
 </p>
-<h2 class="red-heading">Outlier above </h2>
+
+<p>
+Analyzing the below outlier features through various graphs, Zokada provides insightful observations:
+</p>
+
+<iframe src="assets/plots/outliers_below.html" width="100%" height="500px" style="border: none;"></iframe>
+
+<p>
+"The first graph illustrates the runtime intervals of below outlier movies. It's striking to see that a vast majority, 83.6%, are between 1 and 2 hours, and 15.5% are between 2 and 3 hours. The remaining intervals contribute to just 0.8%. This aligns with my husband's earlier findings, suggesting optimal movie revenues for runtimes between 3 and 4 hours. It seems to reaffirm that films lasting between 1 and 3 hours are more likely to fall into the low revenue category.
+</p>
+
+<p>
+Moving to the actor ratio plot, the trend becomes clearer. About 60.3% of the low revenue outliers have between 0 and 25% of top actors in their casting, and 32.8% have between 25% and 50%. Only 7% feature more than 50% top actors. This indicates a direct correlation between having fewer top actors and lower movie revenues.
+</p>
+
+<p>
+The plots for countries and languages ratios interestingly mirror each other, with 93.1% of the below outlier movies having between 75% and 100% of top revenue-generating countries in their production. This initially seems surprising but resonates with the discussions my husband had about the countries and languages features. Top revenue countries, like the USA, can be associated with both high and low outliers, suggesting a higher risk factor. The same pattern is observed in the language feature, underscoring the idea that while high revenue-generating countries and languages offer great potential, they also come with a heightened risk of falling into the low revenue outlier category."
+</p>
 
 
-<h2 class="red-heading">Outlier below </h2>
+
+<p>
+
+
+
+</p>
+
+<iframe src="assets/plots/outliers_above.html" width="100%" height="500px" style="border: none;"></iframe>
+
+<p>
+</p>
+
+<p>
+</p>
+
+<p>
+</p>
+
+<p>
+</p>
 
 <h2 class="red-heading">Final conclusion </h2>
 
+<p>
+</p>
+
+<p>
+</p>
+
+<p>
+</p>
+
+<p>
+</p>
 
 ['runtime_Interval', 'specific_actors_ratio', 'specific_countries_ratio', 'specific_languages_ratio', 'budget', 'company']
 ['specific_actors_ratio', 'specific_countries_ratio', 'specific_languages_ratio', 'budget', 'company']
