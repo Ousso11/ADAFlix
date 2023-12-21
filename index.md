@@ -191,6 +191,10 @@ Zokada was determined to uncover the hidden gems within the world of cinema, the
 <p>
 "I realized that some essential elements weren't captured in my model elements like a movie's budget." she admitted, "It dawned on me that understanding a film's financial backing could be key to unlocking more accurate predictions. So, I sought out additional data and found a new dataset that included movie budgets. I didn't stop there; I also added data on movies scores, production companies, and ratings."
 </p>
+<h2 class="red-heading">add two plots of regression outliers before and after budget </h2>
+
+
+<h2 class="red-heading">check axis and values of all plots and add CI if necessary</h2>
 
 <p>
 "With this enriched dataset, I re-ran my OLS regression. The difference was striking. My model's R-squared jumped to 0.69, showing a significantly better fit, and the mean absolute error decreased to 0.6. It was a moment of clarity for me. The relationships between a movie's financial resources, its production background, and how it's ratings were far more predictive of its revenue than I had initially thought !"
@@ -255,12 +259,13 @@ The plots for countries and languages ratios interestingly mirror each other, wi
 
 <p>
 
-
+<h2 class="red-heading">add phrase de liaison</h2>
 
 </p>
 
 <iframe src="assets/plots/outliers_above.html" width="100%" height="500px" style="border: none;"></iframe>
 
+<h2 class="red-heading">add interpretation</h2>
 <p>
 </p>
 
