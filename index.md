@@ -203,13 +203,10 @@ Zokada was determined to uncover the hidden gems within the world of cinema, the
 <img src="assets/plots/ml_guess.jpg" alt="residuals" style="width:50%; max-width:1000px; display:block; margin:auto;">
 
 </div>
+"The plot on the left represents the distribution of the residuals of our formula. The distribution being centered around 0 means that the differences between our predictions and the actual revenues are very small !
+The plot on the right shows another view of our predictions compared to the actual revenue. The red line represents the line y = x which represents the perfects predictions. We can see that our formula indeed yields results not too far from the red line !"
 
-<p>
 
- "The plot on the left, concerning the prediction of the revenue using only the initial features presented by my husband, exhibits a broad spread of residuals, the difference between predicted movie revenues and the actual revenues, indicating that the initial model has a wide variance in prediction accuracy. This broad distribution suggests that while the model captures the general trend, there's a considerable amount of error in its predictions."
-
-Continuing the analysis, "The plot on the right," Zokada points out, " showing the prediction of the revenue using the initial and additional features, presents a much narrower and more pronounced peak in the distribution of residuals, which points to the majority of the model's predictions being very close to the true values. This sharp peak implies that the inclusion of additional features has likely led to a substantial enhancement in the model's predictive accuracy."
-</p>
 
 <p>
 
@@ -230,9 +227,7 @@ Zakada continues, "In my model, I've decided to label as outliers the 10 data po
 I can tackle each case differently and understand why our predictions didn't match reality in each scenario."</p>
 
 <p>
-Zokada then explores the results of her outlier analysis:
-
-"Using the two outlier groups I identified, I conducted a further investigation to find patterns specific to each. For each group, I compiled a list of features, but with an interesting twist: I only included features where less than 50% of their total distinct values were represented. This meant I was focusing on features that showed a concentrated pattern in either the 'below outliers' or the 'above outliers' group."
+Zokada then explores the results of her outlier analysis: "Using the two outlier groups I identified, I conducted a further investigation to find patterns specific to each. We will look at the most recurrent features amongst movies that should've worked, and amongst movies that should've not worked."
 </p>
 
 <img src="images/zokada2.png" alt="Film Production" style="width:50%; max-width:1000px; display:block; margin:auto;">
@@ -245,10 +240,10 @@ Zokada then explores the results of her outlier analysis:
 <p>
 "We will now analyze the features of these outliers. We will look at the most recurrent features amongst movies that should've worked, and amongst movies that should've not worked."
 </p>
-<iframe src="assets/plots/pos_outliers.html" width="100%" height="500px" style="border: none;"></iframe>
+<iframe src="assets/plots/pos_outliers.html" width="100%" height="490px" style="border: none;"></iframe>
 Zokada says, "Above, we can see the most recurrent features among movies that should've worked but that did not. Our model failed to accurately predict the box office revenues of these movies, and overestimated it. Indeed, we can see that these movies are all in English, nine of them are made in the USA, some of them even contain actors among the top 20 and top 50 best actors. They thus, had all the ingredients to be perfect hits. The failure of the prediction can be explained by the presence of unobserved covariates, such as the plot quality which could greatly influence the results."
 
-<iframe src="assets/plots/neg_outliers.html" width="100%" height="500px" style="border: none;"></iframe>
+<iframe src="assets/plots/neg_outliers.html" width="100%" height="490px" style="border: none;"></iframe>
 
 She takes a deep breath, and finally says "Above, we can see the most recurrent features among movies that should've not worked but that finally did. This time, our model underestimated the movies. As we saw, Indie genre is the feature that influences the box office the most, and in a negative way. Among the 10 outliers, 4 of them have Indie genre, suggesting that our predictive model directly underestimated these movies and predicted a way lower box office than what they should've got, but obviously, there exists Indie movies that eventually work out. The same argument can be applied to the run time interval. Among the 10 movies, 7 are between 1h30 and 2h, and as we saw in our feature analysis, movies with such runtimes usually have low box office, but again, there exists some exception which explains these outliers."
 
