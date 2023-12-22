@@ -62,11 +62,11 @@ Some of them might be poorly represented ! Here for example, before analysing th
 the genres that appeared in at least 500 movies of my dataset. What to do with the remaining genres ? Simply drop th... 
 keep them carefully in a grouped category so you can consider them as a whole... of course !"
 </p>
-<iframe src="assets/plots/genre_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
+<iframe src="assets/plots/genre_revenue.html" width="100%" height="80%" style="border: none;"></iframe>
 
 <p>
-" At the very top of this list is the fantasy genre, making the most money on average. 
-Following closely are family films, adventures, science fiction, and action genres,
+" Well, well, well, you would better make a film about fantasy, family films, adventures, science fiction, 
+action or action/adventure if you want to make money !"
 each contributing substantially to the financial symphony of the film industry. 
 However, as the plot deepens, a nuanced reality surfaces. Toward the bottom of the list, the indie and world cinema genres come into focus." he adds, acknowledging the value of diversity in films.
 </p>
