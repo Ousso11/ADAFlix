@@ -112,22 +112,13 @@ Zokomo also says: " With geometric mean for actors, I am favoring those with con
 
 <h3 style="color: rgb(190, 30, 0);">Runtimes</h3>
 
-Our smart guy continues: "Behold the curious relationship between a movie's duration and its box office revenue. 
-This chart here uncovers a golden sweet spot, films ranging between 3 and 4 hours in duration appear
-to hit the jackpot in revenue generation."
-
+Our smart guy continues: “Behold the curious relationship between a movie’s duration and its box office revenue." 
 <iframe src="assets/plots/runtime_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
 
-He switches to the other colorful box plot. "These initial three segments," 
-he indicates the blue, red, and green boxes, "show considerable variability in earnings. 
-It's a cinematic landscape rife with peaks and valleys."
-Professor ZokOmo leans in, as if sharing a secret with his audience. 
-"Now, observe the interval between 3 to 4 hours. Here lies our pinnacle of profitability the fourth interval. 
-The data points cluster tightly around the mean, with the median revenue standing proudly alongside. 
-It's a harmonious distribution, scarce in outliers, indicative of a reliable return on investment."
+The professor continues "We can first see that exceeding 2h leads to a big increase in revenue compared to the lower runtimes. It looks like an important threshold to reach. It is still significantly increasing when passing from 2h-2h30 to 2h30-3h but past that point, even if it looks like the revenue continues to grow, we don't have significant difference between the 3 following intervals since their ci overlap. As it seems that film lasting 3h30 to 4h earns the most, the key point is exceeding at least 2h, if possible 2h30. Finally we observe a drop for films with more than 4h as we could have expected. We can also see that the 4h+ movies have a very high variance, which can be explained since there are very few movies with such a long runtime."
 
-
-With a nod and a knowing smile, he teases "In the grand finale of their quest, movies that are between 3 and 4 hours long make more money than all the other movies, whether they are longer or shorter."
+He switches to the other colorful box plot. "On the boxplot we notice that the median (top50%) 
+of films with runtime between 2h and 2h30 is at the same level as the first quartile (top25%) of the movies with runtime between 1h30 and 2h. Said otherwise, 50% of films between 2h and 2h30 have a higher revenue than 75% of films between 1h30 and 2h. This is a big difference of revenue for such a small difference of runtime."
 
 <h2 class="red-heading">"It's taking shape !" </h2>
 
@@ -136,49 +127,19 @@ With a nod and a knowing smile, he teases "In the grand finale of their quest, m
 </p>
 <img src="images/zokomo.jpeg" alt="Film Production" style="width:100%; max-width:1000; display:block; margin:auto;">
 
-<p>
-Zokomo generates a bar chart that illustrates the average movie revenues adjusted for inflation across the most frequently used languages in his dataset. Then, he begins to unravel the next chapter of his analytical saga. "Now, let us journey through the linguistic landscape of cinema," he announces, pointing towards the first chart. " The chart reveals that languages such as Arabic and Russian tend to have higher average revenues. Surprisingly, the categories of English and Korean, on the other hand, exhibit lower average revenues, which is somewhat unexpected."
-</p>
-<p>
-<iframe src="assets/plots/languages_bar_plot.html" width="100%" height="500px" style="border: none;"></iframe>
-</p>
 
 <h3 style="color: rgb(190, 30, 0);">Countries and languages</h3>
 
+
 <p>
-He plots then a bar chart that shows the mean log revenue for each selected language with 95% confidence intervals. He also creates a box plot demonstrating the distribution of logarithmic movie revenues for selected languages. Then he continues: "Here we see the revenue distribution for movies in different languages, presented logarithmically. It's fascinating to observe how some languages, like Italian, achieve high average revenues, yet with a wide range of outcomes. Korean, on the other hand, displays a modest revenue performance."
-<p>
-<iframe src="assets/plots/language_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
+text avant
 </p>
-He clicks on the box plot button and continues " We can notice that English and Korean languages show a greater range and many outliers. In particular, English displays a wide range, which is expected given the large number of English language films, including both high-revenue and lower-revenue films. However, languages such as Standard Mandarin and Cantonese show zero outliers, which implies a more consistent revenue performance across films in those languages."
+<iframe src="assets/plots/languages.html" width="100%" height="500px" style="border: none;"></iframe>
+<iframe src="assets/plots/countries.html" width="100%" height="500px" style="border: none;"></iframe>
 
 <p>
-Then, with a swift gesture, he shifts the audience's attention to the following visualization. "But when we look at the revenue by country, the bar chart here !"
+text après
 </p>
-
-<p>
-<iframe src="assets/plots/countries_bar_plot.html" width="100%" height="500px" style="border: none;"></iframe>
-</p>
-
-<p>
-He points to the bold red bars " These bars reveal that the mean revenue per country, shows substantial variations across different countries. The United States of America, United Kingdom, Australia and Germany demonstrate particularly high mean revenues, indicating a strong performance for films from these countries. Conversely, countries like Italy, Canada, France, Japan and Spain show relatively lower mean revenues, though they still contribute significantly to the global film industry. In contrast, South Korea's mean revenue is on the lowest side.
-</p>
-
-
-<p>
-Zokomo employs then a box plot to illustrate the distribution of logarithmic movie revenues in countries that feature at least 50 movies in their dataset.
-</p>
-<p>
-<iframe src="assets/plots/countries_box_plot.html" width="100%" height="500px" style="border: none;"></iframe>
-</p>
-
-<p>
-Professor Predicto leans closer to the box plot beneath, his eyes tracing the medians and outliers. "The median log revenue remains relatively consistent across countries, with a few exceptions displaying higher or lower median revenues. Notably, countries such as the United States of America exhibit a broader range of log revenues, indicating substantial variability in their movie earnings.
-
-While many countries display numerous outliers on the lower end of the revenue spectrum, only the United States of America stands out with outliers on the higher end. This observation suggests that the USA has movies with revenues significantly exceeding the typical range, potentially attributable to the fact that a substantial proportion of movies are produced there."
-</p>
-
-
 
 <p>
 
