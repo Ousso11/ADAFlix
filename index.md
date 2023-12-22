@@ -210,10 +210,6 @@ Zokada was determined to uncover the hidden gems within the world of cinema, the
 </div>
 
 <p>
-<iframe src="assets/plots/model_comparison.html" width="100%" height="500px" style="border: none;"></iframe>
-</p>
-
-<p>
 
  "The plot on the left, concerning the prediction of the revenue using only the initial features presented by my husband, exhibits a broad spread of residuals, the difference between predicted movie revenues and the actual revenues, indicating that the initial model has a wide variance in prediction accuracy. This broad distribution suggests that while the model captures the general trend, there's a considerable amount of error in its predictions."
 
@@ -235,8 +231,8 @@ Zokada's journey into the analytics of regression formula was beginning to bear 
 </p>
 
 <p>
-"In my model, I've decided to label as outliers any data points where the predicted revenue differs from the actual revenue by more than 1.5 on the logarithmic scale. This threshold of 1.5 on the log scale translates to a real-world difference of about 30 times, or 1/30th of the actual figures, depending on whether it's an overestimation or an underestimation." Zokada says, sharing her thoughts on categorizing outliers in her analysis, " This criterion helps me identify movies where our predictions are significantly off. I'm classifying these outliers into two groups: 'below outliers,' where we've underestimated the revenue, and 'above outliers,' where we've overestimated it. By separating them, I can tackle each case differently and understand why our predictions didn't match reality in each scenario."
-</p>
+Zakada continues, "In my model, I've decided to label as outliers the 10 data points that have biggest positive residuals, and the 10 datapoints that have smallest negative residuals, depending on whether it's an overestimation or an underestimation." Zokada says, sharing her thoughts on categorizing outliers in her analysis, " This criterion helps me identify movies where our predictions are significantly off. I'm classifying these outliers into two groups: 'below outliers,' where we've underestimated the revenue, and 'above outliers,' where we've overestimated it. By separating them, 
+I can tackle each case differently and understand why our predictions didn't match reality in each scenario."</p>
 
 <p>
 Zokada then explores the results of her outlier analysis:
