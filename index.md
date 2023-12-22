@@ -67,7 +67,7 @@ Some of them might be poorly represented ! Here for example, before analysing th
 the ones that appeared in at least 500 movies of my dataset. What to do with the remaining genres ? Simply drop th... 
 keep them carefully in a grouped category so you can consider them as a whole... of course !"
 </p>
-<iframe src="assets/plots/genre_revenue.html" width="100%" height="660px" style="border: none;"></iframe>
+<iframe src="assets/plots/genre_revenue.html" width="100%" height="680px" style="border: none;"></iframe>
 " Well, well, well, you would better make a film about fantasy, family films, adventures, science fiction, 
 action or action/adventure if you want to make money ! On the other hand we can acknowledge that producers
 of indie and world cinema genres are true passionates.
@@ -131,11 +131,21 @@ of films with runtime between 2h and 2h30 is at the same level as the first quar
 <h3 style="color: rgb(190, 30, 0);">Countries and languages</h3>
 
 
-<p>
-text avant
-</p>
-<iframe src="assets/plots/languages.html" width="100%" height="500px" style="border: none;"></iframe>
-<iframe src="assets/plots/countries.html" width="100%" height="500px" style="border: none;"></iframe>
+"Now, let us journey through the linguistic landscape of cinema !" tells Zokomo suddenly. 
+He comes up with a very interesting point: "Since countries and languages are by essence correlated, we will analyze them together. The goal is first to see how relevant they are in the process of predicting the box office revenue individually, and then verify if they are actually both proxying the same information." The professor generates the following graph.
+
+<div style="display: flex; justify-content: space-between; margin-top: 20px;">
+
+  <!-- First iframe for languages -->
+  <iframe src="assets/plots/languages.html" width="48%" height="500px" style="border: none;"></iframe>
+
+  <!-- Second iframe for countries -->
+  <iframe src="assets/plots/countries.html" width="48%" height="500px" style="border: none;"></iframe>
+
+</div>
+
+He warns us "the interpretations that I am about to make are only assumptions and we would need further causal analysis to get more insights". He begins "when analysing features independently, US and english were high above the rest, and we would believe that they are both very impactful features on revenue. However, when analysing them together, we notice a big drop for english language, indicating that this feature was capturing a lot of information from the countries. We can imagine that it was benefiting from the success of the US, which is the biggest market for movies. On the other hand, US coefficient didn't change much, so it seems that the defining factor isn't much the english language but rather the US market... Aha !" Zokomo continues with his interpretations "Excluding the US, the average coefficient of the languages is higher than the average coefficient of the countries, indicating that languages are a better indicator of revenue than countries. Combined, english isn't even first anymore and has been doubled by french that encountered the highest increase across all languages. Yet, France is also the country that lowered the most. In the global growth of languages and decrease of countries, France and french were affected the most."
+
 
 <p>
 text après
