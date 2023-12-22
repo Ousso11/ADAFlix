@@ -62,7 +62,7 @@ Some of them might be poorly represented ! Here for example, before analysing th
 the genres that appeared in at least 500 movies of my dataset. What to do with the remaining genres ? Simply drop th... 
 keep them carefully in a grouped category so you can consider them as a whole... of course !"
 </p>
-<iframe src="assets/plots/genre_revenue.html" width="100%" height="80%" style="border: none;"></iframe>
+<iframe src="assets/plots/genre_revenue.html" width="100%" height="700px" style="border: none;"></iframe>
 
 <p>
 " Well, well, well, you would better make a film about fantasy, family films, adventures, science fiction, 
