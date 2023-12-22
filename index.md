@@ -194,7 +194,7 @@ Zokada was determined to uncover the hidden gems within the world of cinema, the
 <h2 class="red-heading">add two plots of regression outliers before and after budget </h2>
 
 
-<h2 class="red-heading">check axis and values of all plots and add CI if necessary</h2>
+<h2 class="red-heading">check axis and values of all plots and add CI if necessary and correct character names</h2>
 
 <p>
 "With this enriched dataset, I re-ran my OLS regression. The difference was striking. My model's R-squared jumped to 0.69, showing a significantly better fit, and the mean absolute error decreased to 0.6. It was a moment of clarity for me. The relationships between a movie's financial resources, its production background, and how it's ratings were far more predictive of its revenue than I had initially thought !"
@@ -248,7 +248,7 @@ Analyzing the below outlier features through various graphs, Zokada provides ins
 </p>
 
 <p>
-Moving to the actor ratio plot, the trend becomes clearer. About 60.3% of the low revenue outliers have between 0 and 25% of top actors in their casting, and 32.8% have between 25% and 50%. Only 7% feature more than 50% top actors. This indicates a direct correlation between having fewer top actors and lower movie revenues.
+Moving to the actor ratio plot, the trend becomes clearer. About 60.3% of the low revenue outliers have between 0 and 25% of top actors in their casting, and 32.8% have between 25% and 50%. Only 7% of the outliers have more than 50% of top actors among their cast. This indicates a direct correlation between having fewer top actors and lower movie revenues.
 </p>
 
 <p>
@@ -258,40 +258,48 @@ The plots for countries and languages ratios interestingly mirror each other, wi
 
 
 <p>
-
-<h2 class="red-heading">add phrase de liaison</h2>
-
+After dissecting the characteristics of below outlier movies, Zokada shifts her focus to the movies that exceeded revenue expectations. She begins analyzing the above revenue outliers, offering her insights:
 </p>
 
 <iframe src="assets/plots/outliers_above.html" width="100%" height="500px" style="border: none;"></iframe>
 
-<h2 class="red-heading">add interpretation</h2>
 <p>
+"The first graph shows the runtime intervals for above outlier movies. Much like the below outliers, a large portion, 85.2%, have a runtime between 1 and 2 hours, and 14.8% between 2 and 3 hours. No movie exceeds these intervals. This pattern suggests that targeting a runtime of 1 to 3 hours can lead to extraordinary revenue. However, this same interval, as I found with below outliers, also poses the risk of yielding the lowest revenues. To achieve optimal, less risky revenues, aiming for movies with runtimes between 3 and 4 hours, as my husband pointed out, seems to be the safer bet."
 </p>
 
 <p>
+"In examining the actor ratio for high revenue outliers, the data presents an intriguing trend. Approximately 59.7% of these outliers have between 0 and 25% top actors in their cast, and 35.2% have between 25% and 50%. Remarkably, only 5% include more than 50% top actors. This suggests a paradoxical correlation: fewer top actors might lead to significantly higher revenues. The logic could be that casting a top actor tends to ensure good revenue, but casting numerous new faces presents a gamble. It can either lead to phenomenal success or notable failure, making it riskier to have less than 50% top actors.
 </p>
 
 <p>
+Looking at the countries and languages ratios, the patterns for above outliers are similar to those for below outliers. For these high revenue outliers, 94.9% involve between 75% and 100% of top revenue-generating countries and 89.2% of top revenue-generating languages. This reaffirms the point about high-revenue countries and languages offering both opportunities and risks. This duality was also evident in earlier discussions with my husband, where we observed stable box plots for modest revenue countries and highly variable ones for top revenue countries, especially the USA. It highlights that while these factors can propel a movie to great heights, they also carry the potential for significant fluctuation," Zokada explains.
 </p>
 
 <p>
-</p>
-
-<h2 class="red-heading">Final conclusion </h2>
-
-<p>
+"Thank you all for joining us on this fascinating journey through the intricate world of cinema analytics," Professor Zokomo begins, his voice resonating with genuine appreciation. "Your attention, questions, and insights have greatly enriched this presentation. A special thanks to Mr. West and our dedicated teaching assistants for their unwavering support and guidance throughout this project."
 </p>
 
 <p>
+He pauses, a smile spreading across his face. "It's been an extraordinary adventure, delving into the depths of movie data, unearthing patterns, and developing predictive tools. This journey has not only deepened our understanding of the film industry but has also been a testament to the power of data analysis in unraveling complex narratives."
+</p>
+
+<h2 class="red-heading">Few days later... </h2>
+
+<p>
+The comprehensive and insightful nature of his project, which brilliantly combined data science with cinematic expertise, did not go unnoticed.
 </p>
 
 <p>
+Shortly thereafter, he was awarded the prestigious 'Best Project Award', a testament to the hard work, dedication, and ingenuity he brought to his research. This accolade highlighted not only the project's excellence but also its potential impact on the film industry and data analysis methodologies.
 </p>
 
 <p>
+The achievements didn't stop there. Impressed by the excellence of his work, Professor West extended an invitation to Professor Zokomo to join the esteemed D-Lab as a Data Analyst. Recognizing the value and opportunity this offered, Professor Zokomo accepted the invitation immediately. His acceptance marked the beginning of an exciting new chapter in his career, promising further advancements and contributions in the field of data science.
 </p>
 
-['runtime_Interval', 'specific_actors_ratio', 'specific_countries_ratio', 'specific_languages_ratio', 'budget', 'company']
-['specific_actors_ratio', 'specific_countries_ratio', 'specific_languages_ratio', 'budget', 'company']
+<p>
+This culmination of events - the award and the new role at D-Lab - signified not only a personal triumph for Professor Zokomo but also a moment of advancement in the synergy between data analytics and the creative arts.
+</p>
 
+
+<h2 class="red-heading">THE END. </h2>
