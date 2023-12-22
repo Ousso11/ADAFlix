@@ -151,12 +151,8 @@ He warns us "the interpretations that I am about to make are only assumptions an
 text après
 </p>
 
-<p>
 
-Zokomo's assessment suggests that choosing to produce a movie in the USA is an attractive option for producers who are willing to take some risks. Despite the inherent risk of falling below the average American movie revenue, by the presence of numerous low outliers, the USA stands out as the only country with high outliers, implying the possibility of achieving a more predictable, substantial revenue and even experiencing remarkable financial success. While this decision carries its share of risk, it may ultimately prove to be worthwhile.
-</p>
-
-
+<h3 style="color: rgb(190, 30, 0);">Months</h3>
 
 <p>
 Our bear is stunned by the results he got. Then, he continues the data analysis by pointing the plot of the log revenue for each month.
@@ -171,6 +167,7 @@ Our bear is stunned by the results he got. Then, he continues the data analysis 
 </p>
 
 
+<h3 style="color: rgb(190, 30, 0);">Gender</h3>
 
 
 <p>
@@ -186,6 +183,7 @@ For that, our scientist is trying to perform an equal frequency discretization o
 
 Pointing to the plot, Zokomo says: " We notice that movies with women percentages between 15% and 21% result in significantly higher box office revenues, followed by movies that have women percentages between 34% and 38%. While movies with 45% to 100% have significantly lower mean box office revenues, and their confidence intervals don't intersect with other intervals."
 </p>
+<h2 class="red-heading">"Zokomo ? What are you doing ?" </h2>
 
 "Our findings here are not merely data points. The art of Film making is a complex interplay of timing, storytelling, and the representation of characters that beckons audiences into theaters. These insights pave our path to uncovering what might be the alchemical formula for box office gold." Proudly, Zokomo turns to ZokAda, his wife who shares his passion for cinematic analytics.
 
@@ -200,17 +198,8 @@ ZokAda closely followed Zokomo's work. With her findings in hand, she is ready t
 Zokada was determined to uncover the hidden gems within the world of cinema, the movies that defied the traditional notions of success. With a dataset boasting 50 parameters, including months, genres, percentages of positive and negative words, languages, and countries, she was armed with a treasure trove of information.
 </p>
 
-<p>
-"Regression analysis was my first stop," Zokada recountes, "I wanted to see how these factors interacted with the revenues of movies, specifically their logarithmic values. The ordinary least squares regression I performed was revealing, but only to a point. It gave me an R-squared coefficient of about 0.3 and an mean absolute error (MAE) of 1.2. This was intriguing, but I knew something was missing."
-</p>
-
-<p>
-"I realized that some essential elements weren't captured in my model elements like a movie's budget." she admitted, "It dawned on me that understanding a film's financial backing could be key to unlocking more accurate predictions. So, I sought out additional data and found a new dataset that included movie budgets. I didn't stop there; I also added data on movies scores, production companies, and ratings."
-</p>
-
-<p>
-"With this enriched dataset, I re-ran my OLS regression. The difference was striking. My model's R-squared jumped to 0.69, showing a significantly better fit, and the mean absolute error decreased to 0.6. This was also confirmed by the histogram plots." Zokada explains.
-</p>
+"Random forests were my first stop," Zokada recountes, "I wanted to see how these factors interacted with the revenues of movies, specifically their logarithmic values. I used random forests to perform predictions of revenues based on the different features we analyzed. The results were revealing. It gave me an R-squared coefficient of about 0.9 and an mean absolute error (MAE) of 0.43. 
+> insérer plot predictions
 
 <p>
 <iframe src="assets/plots/model_comparison.html" width="100%" height="500px" style="border: none;"></iframe>
