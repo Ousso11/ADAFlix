@@ -44,12 +44,18 @@ films with the recent ones. To address this issue, I am adjusting the revenues f
 the Consumer Price Index (CPI) to convert the revenues to 2022 dollars. Thus, we can also have a nowadays
 perspective on the revenues. HAHAHA! I am so smart!"
 </p>
-<img src="images/inflation.png" alt="Film Production" style="width:50%; max-width:1000px; display:block; margin:auto;">
+<img src="images/inflation.png" alt="Film Production" style="width:100%; max-width:1000px; display:block; margin:auto;">
 
 <p>
 He pauses for a moment, then proceeds, "Let's start exploring the 23 distinctive genres where 22 genres stand individually, each with its unique identity, while the 23rd represents all remaining genres."
 </p>
 <iframe src="assets/plots/genre_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
+
+<p>
+"We can see that it has effectively highered older revenues, and it is actually resulting in a more similar distribution across the years. Two points to note :
+    \n - the highest old revenues have now surpassed the other. The inflation had huge impact on them and made them outliers.
+    - even the most recent revenues have been inflated since we are considering the inflation to 2022, to make it more reprensentative for us."
+</p>
 
 <p>
 " At the very top of this list is the fantasy genre, making the most money on average. Following closely are family films, adventures, science fiction, and action genres, each contributing substantially to the financial symphony of the film industry. However, as the plot deepens, a nuanced reality surfaces. Toward the bottom of the list, the indie and world cinema genres come into focus." he adds, acknowledging the value of diversity in films.
