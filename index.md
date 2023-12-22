@@ -20,7 +20,7 @@ films that defied expectations. Get ready to embark on a cinematic journey like 
 
 
 <h2 class="red-heading">"How much do they earn ?!"</h2>
-<h4 style="color: rgb(190, 30, 0);">Revenues</h4>
+<h3  style="color: rgb(190, 30, 0);">Revenues</h3>
 <p>
 "The CMU Movie Summary Corpus Dataset consists of 42,306 plot summaries and its meta data from movies,
 released from 1893 until 2013. 
@@ -38,7 +38,7 @@ I am applying a logarithmic transformation to the revenue data,
 thereby smoothing out these spikes and approximating a normal distribution.
 This step is essential to make the data more amenable for the sophisticated statistical analyses that follow."
 </p>
-<h4 style="color: rgb(190, 30, 0);">Inflation</h4>
+<h3 style="color: rgb(190, 30, 0);">Inflation</h3>
 
 <p>
 "Before starting the feature analysis, a key transformation remains. 
@@ -59,7 +59,7 @@ He pauses for a moment, then proceeds :
 </p>
 <h2 class="red-heading">"I DECLARE THE START OF FEATURE ANALYSIS !"</h2>
 
-<h4 style="color: rgb(190, 30, 0);">Genres</h4>
+<h3 style="color: rgb(190, 30, 0);">Genres</h3>
 
 <p>
 "Listen my dear, be careful when analysing a feature that has many distinct values.
@@ -67,7 +67,7 @@ Some of them might be poorly represented ! Here for example, before analysing th
 the ones that appeared in at least 500 movies of my dataset. What to do with the remaining genres ? Simply drop th... 
 keep them carefully in a grouped category so you can consider them as a whole... of course !"
 </p>
-<iframe src="assets/plots/genre_revenue.html" width="100%" height="760px" style="border: none;"></iframe>
+<iframe src="assets/plots/genre_revenue.html" width="100%" height="660px" style="border: none;"></iframe>
 " Well, well, well, you would better make a film about fantasy, family films, adventures, science fiction, 
 action or action/adventure if you want to make money ! On the other hand we can acknowledge that producers
 of indie and world cinema genres are true passionates.
@@ -88,17 +88,48 @@ With a seamless transition, Zokomo shifted the focus to movie summaries. "Now, l
 Clicking on the "Negative sentiments" button, he continues, "On the flip side, when we explore the percentage of words with negative sentiments, we see another fascinating trend. The sweet spot for box office success lies subtly between 2 to 4 percent of negative words, with the interval of 2 to 4 percent being particularly golden. In summary, it is the equilibrium of emotion that appears to be most profitable. Films whose summaries are rich in neutral words, with just a hint of emotional undertones, seem to strike the right chord with audiences, leading to a more robust box office performance."
 </p>
 
-<h4 style="color: rgb(190, 30, 0);">Runtimes</h4>
+<h3 style="color: rgb(190, 30, 0);">Actors</h3>
 
-Our smart guy continues: "Behold the curious relationship between a movie's duration and its box office revenue. This chart here uncovers a golden sweet spot, films ranging between 3 and 4 hours in duration appear to hit the jackpot in revenue generation."
+<p>
+Zokomo indicates that from now on, as in many following feature analysis, he will be averaging log_revenues instead of averaging revenues. He says "This corresponds to computing the geometric mean instead of an arithmetic mean with the objective of gaining statistical stability. The geometric mean tends to be less sensitive to extreme values (outliers) compared to the arithmetic mean. This makes it a more robust measure in situations where there are significant variations in the data, since it represents better the central tendency. In my case, it is useful to penalize the big variances in revenues thus focusing on the consistency of the contribution of the analysed feature."
+</p>
+
+<p>
+"Here we have a visual representation of the average revenues for the top 25 actors," Professor Zokomo adds. "This chart employs the geometric mean to emphasize consistent performance across varied careers, reducing the emphasis on occasional, high-grossing outliers. It's a clear indicator of who truly commands the box office."
+</p>
+
+
+<iframe src="assets/plots/actors_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
+
+<p>
+"Consider the prime example of Tom Cruise," Zokomo continued, gesturing towards the peak performers on the graph. "His position on this chart is no accident. It's the result of a career that consistently delivers, film after film, as opposed to a few high-grossing anomalies."
+</p>
+
+<p>
+Zokomo also says: " With geometric mean for actors, I am favoring those with consistent success over the ones who only participated in a few hits. A clear demonstration is that selecting the top actors with arithmetic mean results in many actors from harry potter or other sagas. This is because there are many films in these sagas with high revenues, which is boosting the actors mean revenues despite them not having much successful movies. "
+</p>
+
+
+<h3 style="color: rgb(190, 30, 0);">Runtimes</h3>
+
+Our smart guy continues: "Behold the curious relationship between a movie's duration and its box office revenue. 
+This chart here uncovers a golden sweet spot, films ranging between 3 and 4 hours in duration appear
+to hit the jackpot in revenue generation."
 
 <iframe src="assets/plots/runtime_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
 
-He switches to the other colorful box plot. "These initial three segments," he indicates the blue, red, and green boxes, "show considerable variability in earnings. It's a cinematic landscape rife with peaks and valleys." Professor ZokOmo leans in, as if sharing a secret with his audience. "Now, observe the interval between 3 to 4 hours. Here lies our pinnacle of profitability the fourth interval. The data points cluster tightly around the mean, with the median revenue standing proudly alongside. It's a harmonious distribution, scarce in outliers, indicative of a reliable return on investment."
+He switches to the other colorful box plot. "These initial three segments," 
+he indicates the blue, red, and green boxes, "show considerable variability in earnings. 
+It's a cinematic landscape rife with peaks and valleys."
+Professor ZokOmo leans in, as if sharing a secret with his audience. 
+"Now, observe the interval between 3 to 4 hours. Here lies our pinnacle of profitability the fourth interval. 
+The data points cluster tightly around the mean, with the median revenue standing proudly alongside. 
+It's a harmonious distribution, scarce in outliers, indicative of a reliable return on investment."
 
 
 With a nod and a knowing smile, he teases "In the grand finale of their quest, movies that are between 3 and 4 hours long make more money than all the other movies, whether they are longer or shorter."
 
+<h2 class="red-heading">"It's taking shape !" </h2>
 
 <p>
   <strong>Zokomo Predicto</strong> smiles warmly and says, "I'll be honest with you all, I was a bit worried at first. I wasn't sure I'd find anything useful in all these numbers and charts. But look at the results now! I've got some great results that tell us a lot about movies and money. And you know what? I'm really excited to keep going and see what else we can learn about what makes a movie successful. So, let's keep exploring!"
@@ -112,6 +143,7 @@ Zokomo generates a bar chart that illustrates the average movie revenues adjuste
 <iframe src="assets/plots/languages_bar_plot.html" width="100%" height="500px" style="border: none;"></iframe>
 </p>
 
+<h3 style="color: rgb(190, 30, 0);">Countries and languages</h3>
 
 <p>
 He plots then a bar chart that shows the mean log revenue for each selected language with 95% confidence intervals. He also creates a box plot demonstrating the distribution of logarithmic movie revenues for selected languages. Then he continues: "Here we see the revenue distribution for movies in different languages, presented logarithmically. It's fascinating to observe how some languages, like Italian, achieve high average revenues, yet with a wide range of outcomes. Korean, on the other hand, displays a modest revenue performance."
@@ -167,24 +199,6 @@ Our bear is stunned by the results he got. Then, he continues the data analysis 
 "It appears," he announces with a hint of revelation in his voice, "that the prime season to debut a film is indeed June, with a marked advantage in box office returns. December and July follow, aligning neatly with the student holidays."
 </p>
 
-<p>
-Zokomo indicates that from now on, as in many following feature analysis, he will be averaging log_revenues instead of averaging revenues. He says "This corresponds to computing the geometric mean instead of an arithmetic mean with the objective of gaining statistical stability. The geometric mean tends to be less sensitive to extreme values (outliers) compared to the arithmetic mean. This makes it a more robust measure in situations where there are significant variations in the data, since it represents better the central tendency. In my case, it is useful to penalize the big variances in revenues thus focusing on the consistency of the contribution of the analysed feature."
-</p>
-
-<p>
-"Here we have a visual representation of the average revenues for the top 25 actors," Professor Zokomo adds. "This chart employs the geometric mean to emphasize consistent performance across varied careers, reducing the emphasis on occasional, high-grossing outliers. It's a clear indicator of who truly commands the box office."
-</p>
-
-
-<iframe src="assets/plots/actors_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
-
-<p>
-"Consider the prime example of Tom Cruise," Zokomo continued, gesturing towards the peak performers on the graph. "His position on this chart is no accident. It's the result of a career that consistently delivers, film after film, as opposed to a few high-grossing anomalies."
-</p>
-
-<p>
-Zokomo also says: " With geometric mean for actors, I am favoring those with consistent success over the ones who only participated in a few hits. A clear demonstration is that selecting the top actors with arithmetic mean results in many actors from harry potter or other sagas. This is because there are many films in these sagas with high revenues, which is boosting the actors mean revenues despite them not having much successful movies. "
-</p>
 
 
 
