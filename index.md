@@ -68,15 +68,11 @@ the ones that appeared in at least 500 movies of my dataset. What to do with the
 keep them carefully in a grouped category so you can consider them as a whole... of course !"
 </p>
 <iframe src="assets/plots/genre_revenue.html" width="100%" height="760px" style="border: none;"></iframe>
-
-<p>
 " Well, well, well, you would better make a film about fantasy, family films, adventures, science fiction, 
 action or action/adventure if you want to make money ! On the other hand we can acknowledge that producers
 of indie and world cinema genres are true passionates.
 
-</p>
-
-<h4 style="color: rgb(190, 30, 0);">Emotions</h4>
+<h3 style="color: rgb(190, 30, 0);">Emotions</h3>
 
 <p>
 With a seamless transition, Zokomo shifted the focus to movie summaries. "Now, let's consider the language of cinema, as captured in movie summaries. Here we uncover a pattern more intriguing: the emotional charge of words. Positive and negative sentiments from words used in summaries, ranging from 0 to 10 percent, interspersed with a majority of neutral expressions," he details, his finger tracing the shape of the graphs in the air.
