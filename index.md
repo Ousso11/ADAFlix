@@ -4,24 +4,26 @@ title: Movies That Could Have Met a Different Success
 ---
 
 <!-- <link rel="stylesheet" type="text/css" href="{% link assets/css/btn_styles.css %}"> -->
+<br>
 
-<p>
-  Imagine possessing a revolutionary tool capable of predicting the success of your movie even before the cameras start rolling.
-  This extraordinary tool not only identifies the elements your movie might be lacking but also imparts invaluable lessons gleaned from the triumphs of films that defied expectations. 
-  Please join us, Mr. West and the esteemed TAs as we embark on an exploration of the origins and development of this groundbreaking tool.
-  </p>
   <p>
-  First, allow us to introduce <strong> Professor Zokomo Predicto</strong>, the charismatic bear with a nose for cinematic success! With a furiously brilliant mind and a heart as warm as his fuzzy exterior, Zokomo is here to unveil the revolutionary tool that will predict the triumphs of your movie before the first frame is even shot. Get ready to embark on a cinematic journey like never before !
+  First, allow us to introduce <strong> Professor Zokomo Predicto</strong>,
+the charismatic bear with a nose for cinematic success!
+With a furiously brilliant mind and a heart as warm as his fuzzy exterior, 
+Zokomo is here to unveil the revolutionary tool that will predict the triumphs of your movie before
+the first frame is even shot. Not only it identifies the elements your movie 
+might be lacking but also imparts invaluable lessons gleaned from the triumphs of 
+films that defied expectations. Get ready to embark on a cinematic journey like never before !
 
 </p>
 <img src="images/zokomo1.png" alt="Film Production" style="width:100%; max-width:600; display:block; margin:auto;">
 
 
-<h2 class="red-heading">"Let me tell you a little story about data"</h2>
-
+<h2 class="red-heading">"How much do they earn ?!"</h2>
+<h4 style="color: rgb(190, 30, 0);">Revenues</h4>
 <p>
-"The CMU Movie Summary Corpus Dataset consists of 42,306 plot summaries and its meta data from movies, released from 1893 until 2013. 
-
+"The CMU Movie Summary Corpus Dataset consists of 42,306 plot summaries and its meta data from movies,
+released from 1893 until 2013. 
 Consider the box office revenues," he starts, his voice brimming with enthusiasm. 
 </p>
 
@@ -34,8 +36,9 @@ characterized by a small number of movies attaining
 exceptionally high revenues. To truly understand this pattern,
 I am applying a logarithmic transformation to the revenue data,
 thereby smoothing out these spikes and approximating a normal distribution.
-This step is essential to make the dara more amenable for the sophisticated statistical analyses that follow."
+This step is essential to make the data more amenable for the sophisticated statistical analyses that follow."
 </p>
+<h4 style="color: rgb(190, 30, 0);">Inflation</h4>
 
 <p>
 "Before starting the feature analysis, a key transformation remains. 
@@ -56,24 +59,25 @@ He pauses for a moment, then proceeds :
 </p>
 <h2 class="red-heading">"I DECLARE THE START OF FEATURE ANALYSIS !"</h2>
 
+<h4 style="color: rgb(190, 30, 0);">Genres</h4>
+
 <p>
 "Listen my dear, be careful when analysing a feature that has many distinct values.
 Some of them might be poorly represented ! Here for example, before analysing the genres, I took care to select only
-the genres that appeared in at least 500 movies of my dataset. What to do with the remaining genres ? Simply drop th... 
+the ones that appeared in at least 500 movies of my dataset. What to do with the remaining genres ? Simply drop th... 
 keep them carefully in a grouped category so you can consider them as a whole... of course !"
 </p>
-<iframe src="assets/plots/genre_revenue.html" width="100%" height="700px" style="border: none;"></iframe>
+<iframe src="assets/plots/genre_revenue.html" width="100%" height="760px" style="border: none;"></iframe>
 
 <p>
 " Well, well, well, you would better make a film about fantasy, family films, adventures, science fiction, 
-action or action/adventure if you want to make money !"
-each contributing substantially to the financial symphony of the film industry. 
-However, as the plot deepens, a nuanced reality surfaces. Toward the bottom of the list, the indie and world cinema genres come into focus." he adds, acknowledging the value of diversity in films.
-</p>
-
-<p>
+action or action/adventure if you want to make money ! On the other hand we can acknowledge that producers
+of indie and world cinema genres are true passionates.
 
 </p>
+
+<h4 style="color: rgb(190, 30, 0);">Emotions</h4>
+
 <p>
 With a seamless transition, Zokomo shifted the focus to movie summaries. "Now, let's consider the language of cinema, as captured in movie summaries. Here we uncover a pattern more intriguing: the emotional charge of words. Positive and negative sentiments from words used in summaries, ranging from 0 to 10 percent, interspersed with a majority of neutral expressions," he details, his finger tracing the shape of the graphs in the air.
 </p>
@@ -88,6 +92,7 @@ With a seamless transition, Zokomo shifted the focus to movie summaries. "Now, l
 Clicking on the "Negative sentiments" button, he continues, "On the flip side, when we explore the percentage of words with negative sentiments, we see another fascinating trend. The sweet spot for box office success lies subtly between 2 to 4 percent of negative words, with the interval of 2 to 4 percent being particularly golden. In summary, it is the equilibrium of emotion that appears to be most profitable. Films whose summaries are rich in neutral words, with just a hint of emotional undertones, seem to strike the right chord with audiences, leading to a more robust box office performance."
 </p>
 
+<h4 style="color: rgb(190, 30, 0);">Runtimes</h4>
 
 Our smart guy continues: "Behold the curious relationship between a movie's duration and its box office revenue. This chart here uncovers a golden sweet spot, films ranging between 3 and 4 hours in duration appear to hit the jackpot in revenue generation."
 
