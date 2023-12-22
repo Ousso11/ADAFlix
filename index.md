@@ -199,7 +199,15 @@ Zokada was determined to uncover the hidden gems within the world of cinema, the
 </p>
 
 "Random forests were my first stop," Zokada recountes, "I wanted to see how these factors interacted with the revenues of movies, specifically their logarithmic values. I used random forests to perform predictions of revenues based on the different features we analyzed. The results were revealing. It gave me an R-squared coefficient of about 0.9 and an mean absolute error (MAE) of 0.43. 
-> insérer plot predictions
+<div style="display: flex; justify-content: space-between; margin-top: 20px;">
+
+  <!-- First iframe for languages -->
+<img src="assets/plots/residuals.jpg" alt="residuals" style="width:50%; max-width:1000px; display:block; margin:auto;">
+
+  <!-- Second iframe for countries -->
+<img src="assets/plots/ml_guess.jpg" alt="residuals" style="width:50%; max-width:1000px; display:block; margin:auto;">
+
+</div>
 
 <p>
 <iframe src="assets/plots/model_comparison.html" width="100%" height="500px" style="border: none;"></iframe>
