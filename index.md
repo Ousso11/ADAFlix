@@ -29,8 +29,23 @@ Consider the box office revenues," he starts, his voice brimming with enthusiasm
 
 
 <p>
-"The distribution you see is heavily skewed. To truly understand this pattern, I am applying a logarithmic transformation to the revenue data, thereby smoothing out these spikes and approximating a normal distribution. This step is essential for the sophisticated statistical analyses that follow."
+"The distribution you see is heavily skewed,
+characterized by a small number of movies attaining
+exceptionally high revenues. To truly understand this pattern,
+I am applying a logarithmic transformation to the revenue data,
+thereby smoothing out these spikes and approximating a normal distribution.
+This step is essential to make the dara more amenable for the sophisticated statistical analyses that follow."
 </p>
+
+<p>
+"Before starting the feature analysis, a key transformation remains. 
+The revenues being spread over a century, it wouldn't be a fair to compare the success of old 
+films with the recent ones. To address this issue, I am adjusting the revenues for inflation, using 
+the Consumer Price Index (CPI) to convert the revenues to 2022 dollars. Thus, we can also have a nowadays
+perspective on the revenues. HAHAHA! I am so smart!"
+</p>
+<img src="images/inflation.png" alt="Film Production" style="width:50%; max-width:1000px; display:block; margin:auto;">
+
 <p>
 He pauses for a moment, then proceeds, "Let's start exploring the 23 distinctive genres where 22 genres stand individually, each with its unique identity, while the 23rd represents all remaining genres."
 </p>
@@ -86,12 +101,7 @@ He plots then a bar chart that shows the mean log revenue for each selected lang
 <p>
 <iframe src="assets/plots/language_revenue.html" width="100%" height="500px" style="border: none;"></iframe>
 </p>
-
 He clicks on the box plot button and continues " We can notice that English and Korean languages show a greater range and many outliers. In particular, English displays a wide range, which is expected given the large number of English language films, including both high-revenue and lower-revenue films. However, languages such as Standard Mandarin and Cantonese show zero outliers, which implies a more consistent revenue performance across films in those languages."
-</p>
-
-
-
 
 <p>
 Then, with a swift gesture, he shifts the audience's attention to the following visualization. "But when we look at the revenue by country, the bar chart here !"
