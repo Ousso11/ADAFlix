@@ -147,11 +147,6 @@ He comes up with a very interesting point: "Since countries and languages are by
 He warns us "the interpretations that I am about to make are only assumptions and we would need further causal analysis to get more insights". He begins "when analysing features independently, US and english were high above the rest, and we would believe that they are both very impactful features on revenue. However, when analysing them together, we notice a big drop for english language, indicating that this feature was capturing a lot of information from the countries. We can imagine that it was benefiting from the success of the US, which is the biggest market for movies. On the other hand, US coefficient didn't change much, so it seems that the defining factor isn't much the english language but rather the US market... Aha !" Zokomo continues with his interpretations "Excluding the US, the average coefficient of the languages is higher than the average coefficient of the countries, indicating that languages are a better indicator of revenue than countries. Combined, english isn't even first anymore and has been doubled by french that encountered the highest increase across all languages. Yet, France is also the country that lowered the most. In the global growth of languages and decrease of countries, France and french were affected the most."
 
 
-<p>
-text après
-</p>
-
-
 <h3 style="color: rgb(190, 30, 0);">Months</h3>
 
 <p>
@@ -242,59 +237,21 @@ Zokada then explores the results of her outlier analysis:
 
 <img src="images/zokada2.png" alt="Film Production" style="width:50%; max-width:1000px; display:block; margin:auto;">
 
-<p>
-"Remarkably, both lists, one for each type of outliers, ended up sharing the same features. These were 'Movie Runtime', 'Actor Names', 'Countries', 'Languages', 'Movie Budget', and 'Production Company Name'. It was intriguing to see that, despite examining two different outlier groups, the same features emerged as significant in both cases. This discovery could point towards these factors playing a critical role in the differences between predicted and actual movie revenues."
-</p>
 
 <p>
 "As I move forward with my analysis," Zokada explains, "I'm focusing on each outlier group separately, investigating how specific values within each feature contribute to the variance between the predicted and actual revenues. I'll be closely examining to uncover the unique effects and patterns that might explain why certain films didn't align with our initial revenue predictions."
 </p>
 
 <p>
-"Before I dive into the analysis, let me first break down the features that primarily contributed to the variance between the predicted and actual revenues," Zokada begins. "The first feature, 'runtime_Interval', classifies movies into five time categories: less than 1 hour, between 1 and 2 hours, between 2 and 3 hours, between 3 and 4 hours, and more than 4 hours.
-
-The next feature is 'actor ratio'. This measures the presence of top actors in a film by calculating the proportion of the top 100 actors, based on their movie revenues, within the total cast of a movie. Then, we have 'countries ratio', which represents the percentage of top countries in terms of mean movie revenue, relative to the total number of countries involved in each movie. Similarly, 'language ratio' calculates the percentage of top revenue-generating languages out of the total languages used in a film.
-
-The 'budget' and 'company' features are equally important, and I'll be discussing them in more detail as we proceed further with our analysis."
+"We will now analyze the features of these outliers. We will look at the most recurrent features amongst movies that should've worked, and amongst movies that should've not worked."
 </p>
+<iframe src="assets/plots/pos_outliers.html" width="100%" height="500px" style="border: none;"></iframe>
+Zokada says, "Above, we can see the most recurrent features among movies that should've worked but that did not. Our model failed to accurately predict the box office revenues of these movies, and overestimated it. Indeed, we can see that these movies are all in English, nine of them are made in the USA, some of them even contain actors among the top 20 and top 50 best actors. They thus, had all the ingredients to be perfect hits. The failure of the prediction can be explained by the presence of unobserved covariates, such as the plot quality which could greatly influence the results."
 
-<p>
-Analyzing the below outlier features through various graphs, Zokada provides insightful observations:
-</p>
+<iframe src="assets/plots/neg_outliers.html" width="100%" height="500px" style="border: none;"></iframe>
 
-<iframe src="assets/plots/outliers_below.html" width="100%" height="500px" style="border: none;"></iframe>
+She takes a deep breath, and finally says "Above, we can see the most recurrent features among movies that should've not worked but that finally did. This time, our model underestimated the movies. As we saw, Indie genre is the feature that influences the box office the most, and in a negative way. Among the 10 outliers, 4 of them have Indie genre, suggesting that our predictive model directly underestimated these movies and predicted a way lower box office than what they should've got, but obviously, there exists Indie movies that eventually work out. The same argument can be applied to the run time interval. Among the 10 movies, 7 are between 1h30 and 2h, and as we saw in our feature analysis, movies with such runtimes usually have low box office, but again, there exists some exception which explains these outliers."
 
-<p>
-"The first graph illustrates the runtime intervals of below outlier movies. It's striking to see that a vast majority, 83.6%, are between 1 and 2 hours, and 15.5% are between 2 and 3 hours. The remaining intervals contribute to just 0.8%. This aligns with my husband's earlier findings, suggesting optimal movie revenues for runtimes between 3 and 4 hours. It seems to reaffirm that films lasting between 1 and 3 hours are more likely to fall into the low revenue category.
-</p>
-
-<p>
-Moving to the actor ratio plot, the trend becomes clearer. About 60.3% of the low revenue outliers have between 0 and 25% of top actors in their casting, and 32.8% have between 25% and 50%. Only 7% of the outliers have more than 50% of top actors among their cast. This indicates a direct correlation between having fewer top actors and lower movie revenues.
-</p>
-
-<p>
-The plots for countries and languages ratios interestingly mirror each other, with 93.1% of the below outlier movies having between 75% and 100% of top revenue-generating countries in their production. This initially seems surprising but resonates with the discussions my husband had about the countries and languages features. Top revenue countries, like the USA, can be associated with both high and low outliers, suggesting a higher risk factor. The same pattern is observed in the language feature, underscoring the idea that while high revenue-generating countries and languages offer great potential, they also come with a heightened risk of falling into the low revenue outlier category."
-</p>
-
-
-
-<p>
-After dissecting the characteristics of below outlier movies, Zokada shifts her focus to the movies that exceeded revenue expectations. She begins analyzing the above revenue outliers, offering her insights:
-</p>
-
-<iframe src="assets/plots/outliers_above.html" width="100%" height="500px" style="border: none;"></iframe>
-
-<p>
-"The first graph shows the runtime intervals for above outlier movies. Much like the below outliers, a large portion, 85.2%, have a runtime between 1 and 2 hours, and 14.8% between 2 and 3 hours. No movie exceeds these intervals. This pattern suggests that targeting a runtime of 1 to 3 hours can lead to extraordinary revenue. However, this same interval, as I found with below outliers, also poses the risk of yielding the lowest revenues. To achieve optimal, less risky revenues, aiming for movies with runtimes between 3 and 4 hours, as my husband pointed out, seems to be the safer bet."
-</p>
-
-<p>
-"In examining the actor ratio for high revenue outliers, the data presents an intriguing trend. Approximately 59.7% of these outliers have between 0 and 25% top actors in their cast, and 35.2% have between 25% and 50%. Remarkably, only 5% include more than 50% top actors. This suggests a paradoxical correlation: fewer top actors might lead to significantly higher revenues. The logic could be that casting a top actor tends to ensure good revenue, but casting numerous new faces presents a gamble. It can either lead to phenomenal success or notable failure, making it riskier to have less than 50% top actors.
-</p>
-
-<p>
-Looking at the countries and languages ratios, the patterns for above outliers are similar to those for below outliers. For these high revenue outliers, 94.9% involve between 75% and 100% of top revenue-generating countries and 89.2% of top revenue-generating languages. This reaffirms the point about high-revenue countries and languages offering both opportunities and risks. This duality was also evident in earlier discussions with my husband, where we observed stable box plots for modest revenue countries and highly variable ones for top revenue countries, especially the USA. It highlights that while these factors can propel a movie to great heights, they also carry the potential for significant fluctuation," Zokada explains.
-</p>
 
 <p>
 "Thank you all for joining us on this fascinating journey through the intricate world of cinema analytics," Professor Zokomo begins, his voice resonating with genuine appreciation. "Your attention, questions, and insights have greatly enriched this presentation. A special thanks to Mr. West and our dedicated teaching assistants for their unwavering support and guidance throughout this project."
