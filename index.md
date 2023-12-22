@@ -191,13 +191,31 @@ Zokada was determined to uncover the hidden gems within the world of cinema, the
 <p>
 "I realized that some essential elements weren't captured in my model elements like a movie's budget." she admitted, "It dawned on me that understanding a film's financial backing could be key to unlocking more accurate predictions. So, I sought out additional data and found a new dataset that included movie budgets. I didn't stop there; I also added data on movies scores, production companies, and ratings."
 </p>
-<h2 class="red-heading">add two plots of regression outliers before and after budget </h2>
 
+<p>
+
+</p>
 
 <h2 class="red-heading">check axis and values of all plots and add CI if necessary and correct character names</h2>
 
 <p>
-"With this enriched dataset, I re-ran my OLS regression. The difference was striking. My model's R-squared jumped to 0.69, showing a significantly better fit, and the mean absolute error decreased to 0.6. It was a moment of clarity for me. The relationships between a movie's financial resources, its production background, and how it's ratings were far more predictive of its revenue than I had initially thought !"
+"With this enriched dataset, I re-ran my OLS regression. The difference was striking. My model's R-squared jumped to 0.69, showing a significantly better fit, and the mean absolute error decreased to 0.6. This was also confirmed by the histogram plots." Zokada explains.
+</p>
+
+<p>
+<iframe src="assets/plots/model_comparison.html" width="100%" height="500px" style="border: none;"></iframe>
+</p>
+
+<p>
+
+ "The plot on the left, concerning the prediction of the revenue using only the initial features presented by my husband, exhibits a broad spread of residuals, the difference between predicted movie revenues and the actual revenues, indicating that the initial model has a wide variance in prediction accuracy. This broad distribution suggests that while the model captures the general trend, there's a considerable amount of error in its predictions."
+
+Continuing the analysis, "The plot on the right," Zokada points out, " showing the prediction of the revenue using the initial and additional features, presents a much narrower and more pronounced peak in the distribution of residuals, which points to the majority of the model's predictions being very close to the true values. This sharp peak implies that the inclusion of additional features has likely led to a substantial enhancement in the model's predictive accuracy."
+</p>
+
+<p>
+
+"It was a moment of clarity for me. The relationships between a movie's financial resources, its production background, and how it's ratings were far more predictive of its revenue than I had initially thought !"
 </p>
 <p>
 Zokada's journey into the analytics of regression formula was beginning to bear fruit, revealing the nuanced layers of what truly drives a movie's success. She had peeled the superficial layers of her analysis to uncover deeper insights.
@@ -288,11 +306,11 @@ He pauses, a smile spreading across his face. "It's been an extraordinary advent
 <p>
 The comprehensive and insightful nature of his project, which brilliantly combined data science with cinematic expertise, did not go unnoticed.
 </p>
-
+<img src="images/image19.jpeg" alt="Film Production" style="width:50%; max-width:1000px; display:block; margin:auto;">
 <p>
 Shortly thereafter, he was awarded the prestigious 'Best Project Award', a testament to the hard work, dedication, and ingenuity he brought to his research. This accolade highlighted not only the project's excellence but also its potential impact on the film industry and data analysis methodologies.
 </p>
-
+<img src="images/image18.png" alt="Film Production" style="width:50%; max-width:1000px; display:block; margin:auto;">
 <p>
 The achievements didn't stop there. Impressed by the excellence of his work, Professor West extended an invitation to Professor Zokomo to join the esteemed D-Lab as a Data Analyst. Recognizing the value and opportunity this offered, Professor Zokomo accepted the invitation immediately. His acceptance marked the beginning of an exciting new chapter in his career, promising further advancements and contributions in the field of data science.
 </p>
